@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b4nvdmlep0flk"]
+
+[ext_resource type="Script" uid="uid://bm8ogv4h3q8e7" path="res://scripts/game_manager.gd" id="1_5ixd7"]
+[ext_resource type="PackedScene" uid="uid://gl4iosl7ksoe" path="res://rooms/control_room.tscn" id="2_a17sw"]
+[ext_resource type="PackedScene" uid="uid://b6yeqt8aotjym" path="res://rooms/map_room.tscn" id="3_5g42y"]
+[ext_resource type="PackedScene" uid="uid://db7ex33ey1bdu" path="res://rooms/traps_room.tscn" id="4_fp52r"]
+
+[node name="GameManager" type="Node2D" unique_id=162193893]
+script = ExtResource("1_5ixd7")
+
+[node name="ControlRoom" parent="." unique_id=1552118186 instance=ExtResource("2_a17sw")]
+
+[node name="MapRoom" parent="." unique_id=410060164 instance=ExtResource("3_5g42y")]
+
+[node name="TrapsRoom" parent="." unique_id=566551314 instance=ExtResource("4_fp52r")]

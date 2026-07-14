@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://db7ex33ey1bdu"]
+
+[ext_resource type="PackedScene" uid="uid://deuskm2cr3yrf" path="res://interactive objects/door.tscn" id="1_b6mjm"]
+
+[node name="TrapsRoom" type="Node2D" unique_id=1552118186]
+
+[node name="Door" parent="." unique_id=110903563 instance=ExtResource("1_b6mjm")]
+position = Vector2(30, 300)
+target_room = "TrapsRoom"
+
+[node name="Door2" parent="." unique_id=208684889 instance=ExtResource("1_b6mjm")]
+position = Vector2(1120, 300)
+target_room = "ControlRoom"
+
+[node name="Label" type="Label" parent="." unique_id=879194413]
+offset_left = 519.0
+offset_top = 2.0
+offset_right = 650.0
+offset_bottom = 25.0
+text = "TRAPS ROOM"
+autowrap_trim_flags = 128

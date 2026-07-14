@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://43hn5mp018if"]
+
+[ext_resource type="Script" uid="uid://vguc2ncdd2rh" path="res://scripts/button.gd" id="1_joaav"]
+[ext_resource type="Texture2D" uid="uid://1c7fyw0sgla6" path="res://sprites/icon.svg" id="2_yxu6j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6gay6"]
+
+[node name="Button" type="Area2D" unique_id=1161175617]
+scale = Vector2(0.3, 0.3)
+script = ExtResource("1_joaav")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=515705682]
+texture = ExtResource("2_yxu6j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=792588658]
+scale = Vector2(6, 6)
+shape = SubResource("RectangleShape2D_6gay6")
+
+[node name="Timer" type="Timer" parent="." unique_id=363738321]
+wait_time = 0.5
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
