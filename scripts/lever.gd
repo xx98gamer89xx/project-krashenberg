@@ -1,6 +1,8 @@
 extends Node2D
 
 @export var movement_axis: int
+@export var max_movement: int
+
 var game_manager
 var mouse_inside
 var grabbing
