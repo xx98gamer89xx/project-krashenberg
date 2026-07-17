@@ -7,7 +7,6 @@
 size = Vector2(28, 44.5)
 
 [node name="Lever" type="Area2D" unique_id=562176007]
-position = Vector2(384, 230)
 script = ExtResource("1_j1q5i")
 movement_axis = 1
 metadata/_edit_group_ = true
